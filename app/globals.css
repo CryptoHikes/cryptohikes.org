@@ -4,5 +4,78 @@
 
 /* Custom Global Styles */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Orbitron', sans-serif;
+  background: url('/crypto-hike.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+.bg-dark {
+  background-color: rgba(13, 13, 13, 0.8); /* Add a dark overlay */
+}
+
+/* Custom Classes for Cyberpunk Theme */
+.neon-pink {
+  color: #FF007F;
+  text-shadow: 0 0 5px #FF007F, 0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 40px #FF007F;
+}
+
+.neon-blue {
+  color: #00E5FF;
+  text-shadow: 0 0 5px #00E5FF, 0 0 10px #00E5FF, 0 0 20px #00E5FF, 0 0 40px #00E5FF;
+}
+
+.neon-green {
+  color: #00FF87;
+  text-shadow: 0 0 5px #00FF87, 0 0 10px #00FF87, 0 0 20px #00FF87, 0 0 40px #00FF87;
+}
+
+.neon-purple {
+  color: #A901DB;
+  text-shadow: 0 0 5px #A901DB, 0 0 10px #A901DB, 0 0 20px #A901DB, 0 0 40px #A901DB;
+}
+
+.border-neon-pink {
+  border-color: #FF007F;
+  box-shadow: 0 0 5px #FF007F, 0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 40px #FF007F;
+}
+
+.border-neon-blue {
+  border-color: #00E5FF;
+  box-shadow: 0 0 5px #00E5FF, 0 0 10px #00E5FF, 0 0 20px #00E5FF, 0 0 40px #00E5FF;
+}
+
+.border-neon-green {
+  border-color: #00FF87;
+  box-shadow: 0 0 5px #00FF87, 0 0 10px #00FF87, 0 0 20px #00FF87, 0 0 40px #00FF87;
+}
+
+.border-neon-purple {
+  border-color: #A901DB;
+  box-shadow: 0 0 5px #A901DB, 0 0 10px #A901DB, 0 0 20px #A901DB, 0 0 40px #A901DB;
+}
+
+.pulsate {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.hover\:shadow-neon-pink:hover {
+  box-shadow: 0 0 10px #FF007F, 0 0 20px #FF007F, 0 0 40px #FF007F;
+}
+
+.hover\:shadow-neon-purple:hover {
+  box-shadow: 0 0 10px #A901DB, 0 0 20px #A901DB, 0 0 40px #A901DB;
 }
