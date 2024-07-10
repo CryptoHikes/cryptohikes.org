@@ -1,4 +1,5 @@
-import WorkshopCard from '../../components/WorkshopCard'
+import { Metadata } from 'next';
+import WorkshopCard from '../../components/WorkshopCard';
 
 const mockWorkshops = [
   {
@@ -13,10 +14,36 @@ const mockWorkshops = [
     description: 'A deep dive into blockchain technology.',
     date: '2023-09-01'
   }
-]
+];
+
+export const metadata: Metadata = {
+  title: 'Crypto Workshops | CryptoHikes',
+  description: 'Join our crypto workshops to learn about cryptocurrency, blockchain and DeFi. We offer a range of workshops from beginner to advanced levels.',
+  keywords: 'Crypto workshops, cryptocurrency, blockchain, crypto learning, crypto courses',
+  openGraph: {
+    title: 'Crypto Workshops | CryptoHikes',
+    description: 'Join our crypto workshops to learn about cryptocurrency, blockchain and DeFi. We offer a range of workshops from beginner to advanced levels.',
+    url: 'https://cryptohikes.org/workshops',
+    images: [
+      {
+        url: '/path-to-your-image.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Crypto Workshops',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Crypto Workshops | CryptoHikes',
+    description: 'Join our crypto workshops to learn about cryptocurrency, blockchain and DeFi. We offer a range of workshops from beginner to advanced levels.',
+    images: ['/path-to-your-image.jpg'],
+  },
+};
 
 export default function Workshops() {
-  const workshops = mockWorkshops
+  const workshops = mockWorkshops;
 
   return (
     <div className="container mx-auto p-10">
@@ -27,5 +54,5 @@ export default function Workshops() {
         ))}
       </div>
     </div>
-  )
+  );
 }

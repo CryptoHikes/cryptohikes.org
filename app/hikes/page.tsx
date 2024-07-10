@@ -1,4 +1,5 @@
-import HikeCard from '../../components/HikeCard'
+import { Metadata } from 'next';
+import HikeCard from '../../components/HikeCard';
 
 const mockHikes = [
   {
@@ -13,10 +14,36 @@ const mockHikes = [
     description: 'A challenging trail for experienced hikers.',
     difficulty: 'Hard'
   }
-]
+];
+
+export const metadata: Metadata = {
+  title: 'Hiking Trails | CryptoHikes',
+  description: 'Discover the best hiking trails with CryptoHikes. Explore beautiful trails with scenic views and varying difficulty levels.',
+  keywords: 'Hiking trails, scenic views, hiking, outdoor activities, crypto hiking',
+  openGraph: {
+    title: 'Hiking Trails | CryptoHikes',
+    description: 'Discover the best hiking trails with CryptoHikes. Explore beautiful trails with scenic views and varying difficulty levels.',
+    url: 'https://cryptohikes.org/hikes',
+    images: [
+      {
+        url: '/path-to-your-image.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Hiking Trails',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hiking Trails | CryptoHikes',
+    description: 'Discover the best hiking trails with CryptoHikes. Explore beautiful trails with scenic views and varying difficulty levels.',
+    images: ['/path-to-your-image.jpg'],
+  },
+};
 
 export default function Hikes() {
-  const hikes = mockHikes
+  const hikes = mockHikes;
 
   return (
     <div className="container mx-auto p-10">
@@ -27,5 +54,5 @@ export default function Hikes() {
         ))}
       </div>
     </div>
-  )
+  );
 }

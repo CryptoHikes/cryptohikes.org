@@ -1,3 +1,31 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'CryptoHikes - Explore Hiking and Cryptocurrency',
+  description: 'Connect with nature and learn about cryptocurrency with CryptoHikes. Explore scenic hiking trails and join our crypto workshops.',
+  keywords: 'hiking, cryptocurrency, crypto workshops, scenic trails, outdoor activities',
+  openGraph: {
+    title: 'CryptoHikes - Learn Cryptocurrency Hiking to ATH',
+    description: 'Connect with nature and learn about cryptocurrency with CryptoHikes. Explore scenic hiking trails and join our crypto workshops.',
+    url: 'https://cryptohikes.org',
+    images: [
+      {
+        url: '/path-to-your-image.jpg',
+        width: 800,
+        height: 600,
+        alt: 'CryptoHikes',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'CryptoHikes - Learn Cryptocurrency Hiking to ATH',
+    description: 'Connect with nature and learn about cryptocurrency with CryptoHikes. Explore scenic hiking trails and join our crypto workshops.',
+    images: ['/path-to-your-image.jpg'],
+  },
+};
+
 export default function Home() {
   const hikes = [
     { id: 1, name: 'Mountain Trail', description: 'A beautiful mountain trail.', difficulty: 'Medium' },
@@ -13,7 +41,7 @@ export default function Home() {
     <div>
       <header className="text-center py-10 bg-dark">
         <h1 className="text-4xl font-bold text-neon-pink pulsate">CryptoHikes</h1>
-        <p className="mt-4 text-neon-blue">Connect with the true nature of cryptocurrency.</p>
+        <p className="mt-4 text-neon-blue">Learn Cryptocurrency Hiking to ATH</p>
       </header>
       <section className="p-10">
         <h2 className="text-2xl font-bold text-neon-green hover:text-white transition duration-300">Featured Hikes</h2>
