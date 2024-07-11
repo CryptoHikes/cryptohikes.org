@@ -21,6 +21,7 @@ export default function RootLayout({ children }: LayoutProps) {
     <html lang="en">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="icon" href="/favicon.ico" /> {/* Add this line for the favicon */}
       </head>
       <body className="flex flex-col min-h-screen">
         <ThemeProvider>
