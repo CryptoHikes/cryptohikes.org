@@ -18,9 +18,12 @@ const Navbar = () => {
   return (
     <nav className="p-4 border-b-2 border-navbar bg-navbar fixed top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <Link href="/" legacyBehavior>
-          <a className="text-navbar text-lg font-bold pulsate transition duration-300 p-2 rounded">CryptoHikes</a>
-        </Link>
+        <div className="flex items-center space-x-2">
+          <img src="/logo.png" alt="CryptoHikes Logo" className="h-8 w-8" />
+          <Link href="/" legacyBehavior>
+            <a className="text-navbar text-lg font-bold pulsate transition duration-300 p-2 rounded">CryptoHikes</a>
+          </Link>
+        </div>
         <div className="block lg:hidden">
           <button onClick={toggleMenu} className="text-navbar focus:outline-none">
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="w-6 h-6" />

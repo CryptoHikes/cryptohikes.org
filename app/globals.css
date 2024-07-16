@@ -141,7 +141,7 @@ body::before {
 }
 
 .text-neon-blue {
-  color: var (--neon-blue);
+  color: var(--neon-blue);
 }
 
 .text-neon-green {
