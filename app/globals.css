@@ -13,9 +13,9 @@
   --title-color: #000000; /* Default title color for light mode */
   --subtitle-color: #303030; /* Grey color for subtitle in light mode */
   --section-heading-color: #000000; /* Black color for section headings in light mode */
-  --navbar-bg-color: rgba(255, 255, 255, 0.7); /* More opaque navbar background for light mode */
-  --footer-bg-color: rgba(255, 255, 255, 0.7); /* More opaque footer background for light mode */
-  --card-bg-color: rgba(255, 255, 255, 0.7); /* More opaque card background for light mode */
+  --navbar-bg-color: rgba(255, 255, 255, 0.95); /* More opaque navbar background for light mode */
+  --footer-bg-color: rgba(255, 255, 255, 0.95); /* More opaque footer background for light mode */
+  --card-bg-color: rgba(255, 255, 255, 0.95); /* More opaque card background for light mode */
   --card-hover-border-color: #000000; /* Black border color for card hover in light mode */
   --neon-pink: #FF007F;
   --neon-blue: #007ACC; /* Darker neon blue for light mode */
@@ -34,9 +34,9 @@
   --title-color: #FFFFFF; /* Title color for dark mode */
   --subtitle-color: #B0B0B0; /* Light grey color for subtitle in dark mode */
   --section-heading-color: #FFFFFF; /* White color for section headings in dark mode */
-  --navbar-bg-color: rgba(0, 0, 0, 0.7); /* More opaque navbar background for dark mode */
-  --footer-bg-color: rgba(0, 0, 0, 0.7); /* More opaque footer background for dark mode */
-  --card-bg-color: rgba(0, 0, 0, 0.7); /* More opaque card background for dark mode */
+  --navbar-bg-color: rgba(0, 0, 0, 0.95); /* More opaque navbar background for dark mode */
+  --footer-bg-color: rgba(0, 0, 0, 0.95); /* More opaque footer background for dark mode */
+  --card-bg-color: rgba(0, 0, 0, 0.95); /* More opaque card background for dark mode */
   --card-hover-border-color: #FFFFFF; /* White border color for card hover in dark mode */
   --neon-blue: #00E5FF; /* Neon blue for dark mode */
   --neon-green: #00FF87; /* Neon green for dark mode */
@@ -58,7 +58,7 @@ html, body, #__next {
 
 body::before {
   content: '';
-  position: fixed; /* Change to fixed to cover the entire viewport */
+  position: fixed; /* Ensures background covers the entire viewport */
   top: 0;
   left: 0;
   width: 100%;
