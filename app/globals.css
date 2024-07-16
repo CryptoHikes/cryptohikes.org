@@ -46,9 +46,16 @@ body {
   font-family: 'Roboto Mono', monospace;
   background: url('/crypto-hike.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-attachment: fixed;
   color: var(--text-color);
   position: relative;
   min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
 }
 
 html, body, #__next {
