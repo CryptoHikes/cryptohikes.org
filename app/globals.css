@@ -46,16 +46,10 @@ body {
   font-family: 'Roboto Mono', monospace;
   background: url('/crypto-hike.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-attachment: fixed;
   color: var(--text-color);
   position: relative;
   min-height: 100vh;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 html, body, #__next {
@@ -147,7 +141,7 @@ body::before {
 }
 
 .text-neon-blue {
-  color: var(--neon-blue);
+  color: var (--neon-blue);
 }
 
 .text-neon-green {

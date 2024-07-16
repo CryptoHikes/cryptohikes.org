@@ -16,7 +16,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="p-4 border-b-2 border-navbar bg-navbar">
+    <nav className="p-4 border-b-2 border-navbar bg-navbar fixed top-0 left-0 w-full z-10">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" legacyBehavior>
           <a className="text-navbar text-lg font-bold pulsate transition duration-300 p-2 rounded">CryptoHikes</a>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="w-6 h-6" />
           </button>
         </div>
-        <div className={`lg:flex flex-grow items-center ${isOpen ? 'block' : 'hidden'}`}>
+        <div className={`lg:flex flex-grow items-center ${isOpen ? 'block' : 'hidden'} lg:block`}>
           <div className="flex flex-col lg:flex-row lg:ml-auto space-y-4 lg:space-y-0 lg:space-x-10 pr-6">
             <Link href="/hikes" legacyBehavior>
               <a className={`border-2 transition duration-300 p-2 rounded ${isActive('/hikes') ? 'border-neon-pink text-neon-pink' : 'border-transparent text-navbar hover:border-neon-pink hover:text-neon-pink'}`}>

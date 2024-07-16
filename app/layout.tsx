@@ -21,11 +21,11 @@ export default function RootLayout({ children }: LayoutProps) {
     <html lang="en">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" /> {/* Add this line for the favicon */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className="flex flex-col min-h-screen">
         <ThemeProvider>
-          <div className="flex flex-col min-h-screen">
+          <div className="flex flex-col min-h-screen pt-16"> {/* Add padding here */}
             <Navbar />
             <main className="flex-grow">
               {children}
