@@ -67,6 +67,14 @@ body::before {
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  body {
+    background-attachment: fixed; /* Ensure background is fixed on mobile */
+    background-size: cover; /* Ensure background covers the entire viewport */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+}
+
 .pulsate {
   animation: pulse 2s infinite;
 }
